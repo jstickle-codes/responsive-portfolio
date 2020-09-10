@@ -1,0 +1,265 @@
+/***** BASE STYLES *****/
+
+body {
+    color: #313131;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    color: #313131;
+    float: left;
+    font-family: 'Cardo', serif;
+    font-size: 64pt;
+    line-height: 50px;
+    margin-top: 90px;
+    margin-left: 50px;
+}
+
+h2 {
+    color: #313131;
+    float: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48pt;
+    font-weight: lighter;
+}
+
+h3 {
+    color: #ff654a;
+    clear: both;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20pt;
+    padding-top: 75px;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Cardo', serif;
+    font-size: 36pt;
+    text-align: center;
+}
+
+h5 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+h6 {
+    clear: both;
+    font-size: 18pt;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 200px;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24pt;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/***** GRID *****/
+
+.full-width {
+    box-sizing: border-box;
+    margin: auto;
+    overflow: auto;
+    width: 1200px;
+}
+
+.half-width {
+    box-sizing: border-box;
+    float: left;
+    overflow: auto;
+    width: 600px;
+}
+
+.third-width {
+    box-sizing: border-box;
+    float: left;
+    width: 400px;
+    height: 375px;
+}
+
+/***** BODY *****/
+
+/***** HEADER *****/
+
+header {
+    background-color: #ffffff;
+    height: 800px;
+}
+
+nav {
+    float: right;
+    padding: 50px 40px 0px 100px;
+}
+
+nav ul li { 
+    display: inline-block;
+    padding-left: 25px; 
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    color: #313131;
+    font-size: 24pt;
+    text-decoration: none;
+}
+
+header img {
+    float: left;
+    padding-top: 200px;
+}
+
+.orange-text {
+    color: #ff654a;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+/***** ABOUT *****/
+
+#about {
+    background-color: #ff654a;
+    color: #ffffff;
+    height: 1050px;
+    margin-top: 0;
+}
+
+#about h4 {
+    margin-bottom: 25px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#about img {
+    border: 5px solid #ffffff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about h5 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#about p {
+    margin: 0 100px;
+}
+
+/***** PORTFOLIO *****/
+
+#portfolio {
+    background-color: #ffffff;
+    color: #313131;
+    height: 850px;
+}
+
+#portfolio img, #work img {
+    border: 1px solid #b7b7b7;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#portfolio a, #work a {
+    color: #313131;
+    text-decoration: none;
+}
+
+#portfolio h5, #work h5 {
+    margin: 25px auto;
+}
+
+#portfolio p, #work p {
+    margin: 0 auto;
+}
+
+/***** CONTACT *****/
+
+#contact, #contactservices, #contactportfolio {
+    background-color: #ff654a;
+    color: #ffffff;
+    height: 650px;
+}
+
+#contact h5, #contactservices h5, #contactportfolio h5 {
+    margin-bottom: 40px;
+}
+
+#contact a, #contactservices a, #contactportfolio a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#contact p, #contactservices p, #contactportfolio p {
+    font-size: 24pt;
+    margin-top: 10px;
+}
+
+#contact ul li, #contactservices ul li, #contactportfolio ul li { 
+    display: inline-block;
+    padding-left: 100px; 
+}
+
+/***** SERVICES PAGE *****/
+
+/***** HEADER *****/
+
+.subpage-header {
+    background-color: #ffffff;
+    height: 625px;
+}
+
+.subpage-header-h1 {
+    color: #ff654a;
+    font-size: 200pt;
+    margin-top: 300px;
+    margin-left: 50px;
+}
+
+/***** SERVICES *****/
+
+#services {
+    background-color: #ffffff;
+    color: #313131;
+    height: 625px;
+}
+
+#services img {
+    float: left;
+    padding-right: 25px;
+    padding-top: 25px;
+}
+
+#services h5 {
+    float: left;
+    font-size: 20pt;
+    text-align: left;
+}
+
+#services p {
+    clear: both;
+    font-size: 20pt;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+/***** CONTACT SERVICES *****/
+
+#contactservices, #contactportfolio {
+    clear: both;
+}
+
+/***** PORTFOLIO PAGE *****/
+
+#work {
+    background-color: #ffffff;
+    color: #313131;
+    height: 1000px;
+}

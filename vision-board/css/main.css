@@ -1,0 +1,87 @@
+/***** BASE STYLES *****/
+
+body {
+    background-color: #E8E8E8;
+    margin: 75px auto;
+}
+
+/***** CLASSES *****/
+
+.large-block {
+    float: left;
+    width: 400px;
+    box-sizing: border-box;
+    height: 430px;
+    padding: 70px 40px;
+}
+
+.small-block {
+    float: left;
+    width: 400px;
+    box-sizing: border-box;
+    height: 210px;
+    padding: 20px 40px;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.light-bg {
+    background-color: #ffffff;
+}
+
+.dark-bg {
+    background-color: #3B3B3B;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.marker {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: normal;
+}
+
+.highlight {
+	padding: 5px 15px;
+	background: #FFF44F;
+	font-size: 18px;
+}
+
+strong {
+    text-transform: none;
+    font-size: 38px;
+    line-height: 38px;
+}
+
+/***** DIVS *****/
+
+#vision-board {
+    width: 1200px;
+    height: 850px;
+    margin: auto;
+    background: url("../img/background.png");
+    background-size: cover;
+    overflow: auto;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.top-padding {
+	padding-top: 40px;
+}  
