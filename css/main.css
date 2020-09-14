@@ -87,6 +87,267 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* BASE STYLES */
+
+html {
+  font-size: 16px;
+}
+
+body {
+    color: #313131;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+      text-align: left;
+}
+
+.content-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Cardo', serif;
+  font-size: 3em;
+  line-height: 1;
+  margin: 5px 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: lighter;
+  line-height: 1;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h3 {
+  color: #ff654a;
+  font-size: 1.5em;
+}
+
+h4 {
+  font-family: 'Cardo', serif;
+  font-size: 3em;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  font-weight: lighter;
+}
+
+/* GRID */
+
+
+/***** BODY *****/
+
+/***** HEADER *****/
+
+header {
+  background-color: #ffffff;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0 25px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+  line-height: 2;
+  margin-left: 0;
+  padding: 0;
+}
+
+nav ul li { 
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #313131;
+}
+
+.orange-text {
+  color: #ff654a;
+  margin-left: 40px;
+}
+
+/***** ABOUT *****/
+
+#about {
+  background: #ff654a;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#about figure {
+  border: 5px solid #ffffff;
+}
+
+#about .about-content {
+  text-align: center;
+}
+
+#about h5 {
+  font-size: 1.7em;
+  line-height: .5;
+}
+
+#about p {
+  font-size: 1.5em;
+}
+
+/***** PORTFOLIO *****/
+
+#portfolio, #work {
+  background-color: #ffffff;
+}
+
+#portfolio figure img, #work figure img {
+  border: 2px solid #b7b7b7;
+}
+
+#portfolio a, #work a {
+  text-decoration: none;
+}
+
+#portfolio h5, #work h5 {
+  font-size: 1.5em;
+  margin: 10px 0 0 0;
+}
+
+#portfolio p, #work p {
+  font-size: 1.3em;
+  margin: 10px 0 30px 0;
+}
+
+/***** FOOTER / CONTACT *****/
+
+.footer-content {
+  text-align: center;
+}
+
+footer {
+  background-color: #ff654a;
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer h5 {
+  font-size: 1.667em;
+  margin: 0;
+}
+
+.hire {
+  margin-bottom: 75px;
+}
+
+.hire p {
+  font-size: 1.5em;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: #ffffff solid;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons p i {
+  color: #ff654a;
+  font-size: 1.3125em;
+}
+
+/***** SUB PAGES *****/
+
+/***** HEADER *****/
+
+.subpage-header {
+  background-color: #ffffff;
+}
+
+.subpage-header-content {
+  justify-content: left;
+}
+
+.subpage-header-h1 {
+  color: #ff654a;
+  font-size: 4.5em;
+}
+
+/***** SERVICES PAGE ******/
+
+#services {
+  background-color: #ffffff;
+}
+
+.services-content {
+  text-align: center;
+}
+
+.services-content i {
+  font-size: 5em;
+  color: #ff654a;
+}
+
+#services h5 {
+  font-size: 1.667em;
+}
+
+#services p {
+  font-size: 1.667em;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -175,9 +436,177 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* TABLETS */
+
+@media only screen and (min-width: 768px) {
+
+  .content-wrapper {
+    max-width: 691px;
+  }
+
+  /*HEADER*/
+
+  header .header-content {
+    justify-content: left;
+  }
+
+  header h1 {
+    font-size: 4em;
+  }
+
+  header h2 {
+    font-size: 3em;
+  }
+
+  header h2 {
+    text-align: left;
+  }
+
+  nav ul li { 
+    font-size: 2em;
+  }
+
+  /*ABOUT*/
+
+  #about h4, footer h4 {
+    width: 100%;
+    text-align: center;
+  }
+
+  /*PORTFOLIO*/
+
+  #portfolio .portfolio-content, #work .portfolio-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  #portfolio .project-1, #portfolio .project-2, #portfolio .project-3,
+  #work .project-1, #work .project-2, #work .project-3, #work .project-4 {
+    width: 30%;
+  }
+
+  #portfolio h3, #work h3 {
+    font-size: 2em;
+  }
+
+  /* FOOTER */
+
+  footer h4 {
+    width: 100%
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  footer .hire, footer .social {
+    width: 44%;
+  }
+
+  footer h6 {
+    margin: 0;
+    padding: 0;
+  }
+
 }
+
+
+  /* DESKTOP */
+
+@media only screen and (min-width: 1200px) {
+
+  .content-wrapper {
+    max-width: 1080px;
+  }
+
+    /* HEADER */
+
+  header {
+    min-height: 725px;
+  }
+
+  header .content-wrapper {
+    flex-flow: column-reverse;
+    align-items: flex-end;
+  }
+
+  header nav {
+    width: 65%;
+    padding-bottom: 75px;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul li { 
+    font-size: 1.75em;
+  }
+
+  header h1 {
+    width: 100%;
+    font-size: 5em;
+  }
+
+  header h2 {
+    width: 95%;
+    font-size: 4em;
+  }
+
+  /* HEADER */
+
+  #portfolio, #work {
+    min-height: 725px;
+  }
+
+  /* FOOTER */
+
+  footer .hire, footer .social {
+    width: 45%;
+  }
+
+  footer h6 {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* SUBPAGES */
+
+  .subpage-header-h1 {
+    font-size: 18em;
+  }
+
+  /* SERVICES PAGE */
+
+  #services .content-wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  #services .services-content {
+    width: 40%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  #services .services-content i {
+    width: 25%;
+  }
+
+  #services .services-content h5 {
+    width: 75%;
+  }
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
