@@ -97,7 +97,7 @@ body {
     color: #313131;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1em;
-      text-align: left;
+    text-align: left;
 }
 
 .content-wrapper {
@@ -164,7 +164,7 @@ p {
 
 /***** HEADER *****/
 
-header {
+header, #portfolio, .subpage-header, #services {
   background-color: #ffffff;
 }
 
@@ -221,7 +221,7 @@ nav ul li a {
   border: 5px solid #ffffff;
 }
 
-#about .about-content {
+#about .about-content, #services .services-content {
   text-align: center;
 }
 
@@ -236,33 +236,25 @@ nav ul li a {
 
 /***** PORTFOLIO *****/
 
-#portfolio, #work {
-  background-color: #ffffff;
-}
-
-#portfolio figure img, #work figure img {
+#portfolio figure img {
   border: 2px solid #b7b7b7;
 }
 
-#portfolio a, #work a {
+#portfolio a {
   text-decoration: none;
 }
 
-#portfolio h5, #work h5 {
+#portfolio h5 {
   font-size: 1.5em;
   margin: 10px 0 0 0;
 }
 
-#portfolio p, #work p {
+#portfolio p {
   font-size: 1.3em;
   margin: 10px 0 30px 0;
 }
 
 /***** FOOTER / CONTACT *****/
-
-.footer-content {
-  text-align: center;
-}
 
 footer {
   background-color: #ff654a;
@@ -279,7 +271,7 @@ footer h5 {
   margin: 0;
 }
 
-.hire {
+.hire, .social {
   margin-bottom: 75px;
 }
 
@@ -309,16 +301,20 @@ footer .social-icons p {
   font-size: 1.3125em;
 }
 
+footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  width: 100%;
+  text-align: center;
+}
+
 /***** SUB PAGES *****/
 
 /***** HEADER *****/
 
-.subpage-header {
-  background-color: #ffffff;
-}
-
 .subpage-header-content {
-  justify-content: left;
   width: 100%;
 }
 
@@ -330,24 +326,12 @@ footer .social-icons p {
 
 /***** SERVICES PAGE ******/
 
-#services {
-  background-color: #ffffff;
-}
-
-.services-content {
-  text-align: center;
-}
-
 .services-content i {
   font-size: 5em;
   color: #ff654a;
 }
 
-#services h5 {
-  font-size: 1.667em;
-}
-
-#services p {
+#services h5, #services p {
   font-size: 1.667em;
 }
 
@@ -479,32 +463,30 @@ footer .social-icons p {
     flex-flow: row wrap;
   }
 
-  #portfolio .project-1, #portfolio .project-2, #portfolio .project-3,
-  #work .project-1, #work .project-2, #work .project-3, #work .project-4 {
+  #portfolio .project-1, #portfolio .project-2, #portfolio .project-3, #portfolio .project-4 {
     width: 30%;
   }
 
-  #portfolio h3, #work h3 {
+  #portfolio h3 {
     font-size: 2em;
   }
 
   /* FOOTER */
 
   footer .footer-content {
-    display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
   }
 
   footer .hire, footer .social {
-    width: 44%;
+    width: 45%;
   }
 
   footer h6 {
     margin: 0;
     padding: 0;
-  }
+    width: 100%;
+    text-align: center;
+    }
 
   /* SUBPAGES */
 
@@ -513,7 +495,6 @@ footer .social-icons p {
   }
 
 }
-
 
   /* DESKTOP */
 
@@ -558,21 +539,16 @@ footer .social-icons p {
     font-size: 4em;
   }
 
-  /* HEADER */
+  /* MAIN */
 
-  #portfolio, #work {
+  #portfolio {
     min-height: 725px;
   }
 
   /* FOOTER */
 
   footer .hire, footer .social {
-    width: 45%;
-  }
-
-  footer h6 {
-    width: 100%;
-    text-align: center;
+    width: 40%;
   }
 
   /* SUBPAGES */
