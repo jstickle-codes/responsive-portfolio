@@ -1,5 +1,10 @@
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+  font-size: 1em;
   color: #454545;
   margin: 0px;
   padding: 0px;
@@ -14,27 +19,34 @@ body {
 .ball, .button {
   margin: 0 auto;
   position:relative; 
-  width:80%;
+  width: 100%;
 }
 .answer {
   position:absolute;
   width:14%;
-  top:50%;
-  left:50%;
-  margin-top:-60px;
-  margin-left:-65px;
-  font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
+  top:35%;
+  left:46%;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: .4em;
   color: #222;
   text-transform: uppercase;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 #questionButton {
-  font: 26px 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-size: 1em;
   border-radius: 5px;
   border: none;
   color: #f8f8f8;
   background-color: #f16059;
-  padding: 10px 75px;
+  padding: 10px 10px;
   display: block;
   margin: 0 auto;
 }
@@ -44,7 +56,7 @@ header {
   text-align: center;
 }
 header span {
-  font-size: 60px;
+  font-size: 2em;
   color: #f16059;
 }
 
@@ -56,5 +68,41 @@ footer p {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: .75em;
 }
+
+/**** BREAKPOINTS ****/
+
+/* TABLETS */
+
+@media only screen and (min-width: 768px) {
+
+  header span {
+    font-size: 3.75em;
+  }
+
+  .answer {
+  font-size: .75em;
+  left:45%;
+  }
+
+  #questionButton {
+    font-size: 1.625em;
+    padding: 10px 75px;
+  }
+
+  .ball, .button {
+    width:80%;
+  }
+
+}
+
+  /* DESKTOP */
+
+  @media only screen and (min-width: 1200px) {
+
+  .answer {
+    font-size: 1em;
+    }
+
+  }

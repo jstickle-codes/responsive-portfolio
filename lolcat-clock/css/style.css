@@ -96,15 +96,15 @@ footer p {
   .content-wrapper {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 50px;
   }
 
   .clock-content {
-    width: 40%;
+    width: 45%;
   }
 
   .set-times {
-    width: 40%;
+    width: 45%;
   }
 }

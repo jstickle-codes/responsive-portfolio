@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	var magic8Ball = {};
-	magic8Ball.listOfAnswers = ["It is certain.", "As I see it.", "yes", "Reply hazy, try again.", "Don't count on it."];
+	magic8Ball.listOfAnswers = ["It is certain.", "As I see it.", "yes", "try again.", "Don't count on it."];
   
   $("#answer").hide( );
 
@@ -13,12 +13,13 @@ $(document).ready(function(){
 		var randomIndex = Math.floor(randomNumberForListofAnswers);
 		var answer = this.listOfAnswers[randomIndex];
 	$("#8ball").effect( "shake" );
+	
     setTimeout(
     function() {
               
 	$("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballAnswer.png");
       
-  $("#answer").text( answer );
+  	$("#answer").text( answer );
 		
 	console.log(question);
     console.log(answer);
