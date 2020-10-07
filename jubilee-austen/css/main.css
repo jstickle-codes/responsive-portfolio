@@ -1,183 +1,683 @@
- 	
-/***** BASE STYLES *****/
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+  /*   BASE STYLES   */
+
+html {
+  font-size: 16px;
+}
 
 body {
-    color: #2b2b2b;
-    font-family: 'Source Sans Pro', sans-serif;
+  color: #313131;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  text-align: left;
 }
 
-/***** GRID *****/
-	
-.full-width {
-    margin: 0 auto;
-    overflow: auto;
-    width: 1200px;
+.content-wrapper {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
 }
 
-.half-width {
-    float: left;
-    width: 600px;
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 2em;
+  line-height: 1;
 }
 
-.third-width {
-    float: left;
-    width: 400px;
+p {
+  line-height: 1.5;
 }
 
-/***** HEADER *****/
+/*   HEADER   */
 
 header {
-    background: url("../img/hero.png");
-    background-position: center;
-    background-size: cover;
-    height: 800px;
+  background: url(../img/hero.png) center #9b9b9b;
+  background-size: cover;
+  min-height: 500px;
 }
-	
+
+.header-h1-container {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 header h1 { 
-    color: #bbc085;
-    font-family: 'Lora', serif;
-    font-size: 30px;
-    padding: 65px 0 65px 25px;
+  color: #bbc085;
+  font-family: 'Lora', serif;
+  font-size: 1.87em;
 }
 
-    nav {
-        float: right;
-        padding: 75px 25px;
-    }
+header nav {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1.125em;
+  justify-content: center;
+  text-transform: uppercase;
+  width: 100%;
+}
 
-    nav ul li{
-        display: inline-block;
-    }
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-left: 0;
+  width: 100%;
+}
 
-    nav ul li a {
-        color: #828282;
-        font-size: 18px;
-        padding-left: 80px; 
-        text-decoration: none;
-        text-transform: uppercase;
-    }
+header nav ul li {
+  font-size: 1.125em;
+}
 
-    header h2 {
-        clear: both;
-        color: #9b9b9b;
-        font-family: 'Lora', serif;
-        font-size: 72px;
-        line-height: 80px;
-        padding: 20px 0 20px 25px;
-        width: 1000px;
-    }
+nav ul li a {
+  color: #828282;
+  text-decoration: none;
+}
 
-    header h2 span {
-        color: #2b2b2b;
-    }
+.header-h2-container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+header h2 {
+  color: #9b9b9b;
+}
+
+header h2 span {
+  color: #2b2b2b;
+}
 
 /***** ABOUT *****/
 
-#about .full-width {
-    padding: 80px 0;
+.about-content-wrapper {
+  width: 100%;
 }
 
 #about h2 {
-    font-family: 'Lora', serif;
-    font-size: 36px; 
-    padding-left: 50px;
+  width: 100%;
 }
 
 #about p {
-    color: #7f7f7f;
-    font-size: 21px;
-    line-height: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-
+  color: #7f7f7f;
+  font-size: 1.312em;
 }
 
 /***** WORK *****/
 
 #work {
-    background-color: #f9ceb7;
-    text-align: center;
+  background-color: #f9ceb7;
+  padding-top: 25px;
 }
-	
-#work .full-width {
-    padding: 115px 0;
+
+.content-container {
+  width: 100%;
 }
- 
-#work img {
-    padding-bottom: 30px;
+
+.section-1, .section-2, .section-3 {
+  text-align: center;
+}
+
+#work i {
+  color: #c49075;
+  font-size: 3.75em;
+  margin: 25px;
 }
 
 #work h3 {
-    font-size: 24px;
-    line-height: 32px;
-    margin: 0 auto;
-    width: 190px;
+  font-size: 1.5em;
+  line-height: 1;
 }
- 
+
 #work p {
-    font-family: 'Lora', serif;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 0 50px;
+  font-family: 'Lora', serif;
+  font-size: 1.125em;
 }
 
 /***** CONTACT *****/
 
-#contact {
-    background-color: #ebebeb;
+footer {
+  background-color: #ebebeb;
 }
 
-#contact .full-width {
-    padding: 110px 0;
+.footer-img-container {
+  width: 100%;
 }
-	
-#contact img#contact-img {
+
+footer img {
+  border: 5px solid #ffffff;
+  margin-top: 25px;
+  width: 95%;
+}
+
+footer figure {
+  margin: 0;
+  width: 100%;
+}
+
+.footer-content {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+footer .email-container, footer .socialmedia-container {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+footer h2 {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+footer #email-header {
+  font-size: 1.75em;
+  font-weight: normal;    
+  line-height: 1;
+  width: 100%;
+}
+
+footer #socialmedia-header {
+  font-size: 1.43em;
+  line-height: 1;
+  width: 100%;
+}
+
+footer a {
+  color: #c49075;
+  font-weight: bold;
+  text-decoration: none;
+  width: 100%;
+}
+
+footer .social-icons {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer .social-icons p {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+}
+
+.social-icons p i {
+  color: #c49075;
+  font-size: 1.3125em;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+  /* TABLETS */
+
+  /* HEADER */
+
+  .header-h2-container {
+    text-align: left;
+    width: 75%;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  /* WORK */
+
+  #work .content-wrapper {
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+  }
+
+  .content-container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .section-1, .section-2, .section-3 {
+    width: 25%;
+  }
+
+  #work i {
+    margin: 0;
+    padding: 0;
+  }
+
+  #work p {
+    font-size: 1em;
+  }
+
+  /* FOOTER */
+
+  .footer-img-container {
+    width: 45%;
+  }
+
+  footer .content-wrapper {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-content {
+    justify-content: flex-start;
+    padding-top: 25px;
+    width: 40%;
+  }
+
+  footer .email-container, footer .socialmedia-container {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  footer .email-container {
+    margin-bottom: 25px;
+  }
+ 
+  footer h2 {
+    font-size: 1.5em;
+  }
+
+  footer h3 {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+
+  footer .social-icons {
+    padding: 0;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /* DESKTOP */
+
+  header {
+    min-height: 800px;
+  }
+
+  header .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .header-h1-container {
+    justify-content: flex-start;
+    width: 25%;
+  }
+
+  header nav {
+    align-items: flex-start;
+    font-size: 1.125em;
+    justify-content: flex-end;
+    width: 40%;
+  }
+
+  .header-h2-container {
+    margin-top: 100px;
+    width: 90%;
+  }
+
+  header h2 {
+    font-size: 4.25em;
+  }
+
+  /* ABOUT */
+
+  #about .content-wrapper {
+    min-height: 600px;
+  }
+
+  .about-container {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .h2-container {
+    width: 100%;
+  }
+
+  #about h2 {
+    font-size: 2.25em;
+  }
+
+  #about p {
+    font-size: 1.312em;
+    line-height: 2;
+  }
+
+  .p-1, .p-2 {
+    text-align: left;
+    width: 45%;
+  }
+
+  /* WORK */
+
+  #work .p {
+    font-size: 1.125em;
+  }
+
+  /* FOOTER */
+
+  footer .content-wrapper {
+    min-height: 600px;
+  }
+
+  footer .email-container {
+    margin-bottom: 50px;
+  }
+
+  footer h2 {
+    font-size: 2.25em;
+  }
+
+  footer img {
     border: 12px solid #ffffff;
-    margin-left: 25px;
+  }
+
+  .email-header {
+    font-size: 2em;
+  }
+
+  footer a {
+    font-size: 1.75em;
+  }
+
+  .socialmedia-header {
+    font-size: 1.8125em;
+  }
+
+  footer .social-icons {
+    width: 70%;
+  }
+
+  .social-icons p i {
+    font-size: 1em;
+  }
+
+
+
+
+
 }
 
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
-    padding-left: 115px;
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
 
-#contact #envelope {
-    padding: 0 10px 0 115px;
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
 
-#contact h2 {
-    font-family: 'Lora', serif;
-    font-size: 36px;
-    line-height: 44px;
-}
-
-#contact #email-header {
-    font-size: 32px;
-    font-weight: normal;    
-    line-height: 44px;
-    margin: -30px 0 5px 0;
-}
-
-#contact #socialmedia-header {
-    font-size: 29px;
-    font-weight: bold;
-    line-height: 44px;
-    margin: 40px 0 0 0;
-}
-
-#contact a {
-    color: #c49075;
-    font-size: 28px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#contact ul {
-    list-style: none;
-}
-#contact ul li {
-     display: inline-block;
-}
-#contact ul img {
-    font-size: 32px;
-    padding-right: 48px;
-}
