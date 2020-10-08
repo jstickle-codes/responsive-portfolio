@@ -184,7 +184,7 @@ header h2 span {
 
 /***** ABOUT *****/
 
-.about-content-wrapper {
+.about content-wrapper {
   width: 100%;
 }
 
@@ -451,7 +451,7 @@ footer .social-icons p {
 
   footer .content-wrapper {
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .footer-content {
