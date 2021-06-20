@@ -159,9 +159,8 @@ p {
 
 /* GRID */
 
-
 /***** BODY *****/
-
+s
 /***** HEADER *****/
 
 header, #portfolio, .subpage-header, #services {
@@ -336,6 +335,167 @@ footer .footer-content {
   font-size: 1.667em;
 }
 
+/****** RESUME PAGE ******/
+
+#resume a {
+  text-decoration: none;
+  color: #313131;
+  font-size: 1.2em;
+}
+
+#resume p {
+  color: #313131;
+  font-size: 1em;
+}
+
+#resume h1 {
+  color: #ff654a;
+  font-size: 2.3em;
+}
+
+#resume h2 {
+  color: #313131;
+  font-size: 2.61em;
+  margin: 0;
+  padding: 0;
+}
+
+#resume h3 {
+  color: #ff654a;
+  font-family: 'Cardo', serif;
+  font-size: 1.19em;
+  text-transform: uppercase;
+}
+
+#resume h4 {
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+}
+
+.h3-container {
+  text-align: center;
+  width: 100%;
+}
+
+.organization-name-container {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.italic-h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.25em;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.bold-h4 {
+  font-family: 'Cardo', serif;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#resume h5 {
+  font-family: 'Cardo', serif;
+  font-size: 1.5em;
+  margin: 30px 0;
+}
+
+.name-container, .career-title-container {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+#resume .content-wrapper {
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.resume-header {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 25px 0 50px 0;
+  width: 95%;
+}
+
+.resume-body {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 95%;
+}
+
+.job-1, .job-2, .job-3, .job-4, .job-5 {
+  padding: 20px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.job-title-container {
+  text-align: center;
+  width: 100%;
+}
+
+.p-container {
+  text-align: center;
+  width: 100%;
+}
+
+.job-description {
+  padding: 0;
+}
+
+#resume ol {
+  list-style-type: circle;
+  margin: 0;
+}
+
+#resume li {
+  font-size: 1em;
+  font-style: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+
+.resume-sidebar {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 95%;
+}
+
+.italic-text {
+  font-style: italic;
+  margin: 0;
+}
+
+.bold-text {
+  font-weight: normal;
+  margin: 0;
+}
+
+.skills-content, .training-content, .community-content, .education-content {
+  text-align: center;
+}
+
+.skills-content, .training-content, .community-content {
+  margin-bottom: 25px;
+}
+
+.education-1 {
+  margin-bottom: 25px;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -496,6 +656,64 @@ footer .footer-content {
     font-size: 12em;
   }
 
+  /* RESUME PAGE */
+
+  #resume a {
+    font-size: 1.75em;
+  }
+  
+  #resume p {
+    font-size: 1.5em;
+  }
+  
+  #resume h1 {
+    font-size: 5em;
+  }
+  
+  #resume h2 {
+    font-size: 3.75em;
+  }
+  
+  #resume h3 {
+    font-size: 1.5em;
+  }
+
+  .italic-h4 {
+    font-size: 1.75em;
+  }
+  
+  .bold-h4 {
+    font-size: 2em;
+  }
+  
+  #resume h5 {
+    font-size: 1.5em;
+  }
+
+  #resume li {
+    font-size: 1.75em;
+  }
+
+  #resume .content-wrapper {
+    padding: 75px 0 100px 0;
+  }
+
+  .resume-header {
+    padding: 75px 0 75px 0;
+  }
+
+  .job-1, .job-2, .job-3, .job-4, .job-5 {
+    padding-bottom: 50px;
+  }
+
+  .skills-content, .training-content, .community-content {
+    margin-bottom: 50px;
+  }
+  
+  .education-1 {
+    margin-bottom: 75px;
+  }
+
 }
 
   /* DESKTOP */
@@ -519,7 +737,7 @@ footer .footer-content {
 
   header nav {
     padding-bottom: 75px;
-    width: 65%;
+    width: 80%;
   }
 
   header nav ul {
@@ -583,6 +801,72 @@ footer .footer-content {
   #services .services-content h5 {
     width: 75%;
   }
+
+    /* RESUME PAGE */
+    
+    #resume h4 {
+      text-align: left;
+    }
+  
+    .organization-name-container {
+      margin-bottom: 0;
+    }
+  
+    .h3-container {
+      text-align: left;
+    }
+    
+    #career-title-container {
+      margin: 0;
+      padding: 0;
+    }
+    
+    #resume .content-wrapper {
+      justify-content: flex-start;
+    }
+    
+    .resume-header {
+      justify-content: space-between;
+    }
+
+    .name-container {
+      width: 58%;
+    }
+    
+    .career-title-container {
+      width: 39%;
+    }
+  
+    .resume-body {
+      justify-content: flex-start;
+      width: 70%;
+    }
+    
+    .job-title-container {
+      text-align: left;
+      width: 62%;
+    }
+    
+    .p-container {
+      margin-left: 50px;
+      text-align: left;
+      width: 30%;
+    }
+    
+    .resume-sidebar {
+      box-sizing: border-box;
+      justify-content: flex-start;
+      margin-left: 50px;
+      width: 25%;
+    }
+  
+    .skills-content, .training-content, .community-content, .education-content {
+      text-align: left;
+    }
+
+    .job-1, .job-2, .job-3, .job-4, .job-5 {
+      padding-bottom: 50px;
+    }
 
 }
 
