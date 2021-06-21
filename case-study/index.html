@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jeannine Stickle | Portfolio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!--stylesheets-->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+  <script src="https://kit.fontawesome.com/b3d54506fe.js" crossorigin="anonymous"></script>
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--HEADER-->
+  <header class="subpage-header">
+    <div class="content-wrapper">
+      <div class="subpage-header-content">
+        <h1 class="subpage-header-h1">Case Study</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../work/index.html">Portfolio</a></li>
+          <li><a href="../resume/index.html">Resume</a></li>
+          <li><a href="../services/index.html">Services</a></li>
+          <li><a href="#contact-case-study">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!--CASE STUDY-->  
+    <section id="case-study">
+      <div class="content-wrapper">
+        <h4>Tulare Public Library Search Box</h4>
+        <div class="case-study-content">
+          <article>
+            <p>I was approached by the Tulare Public Library, looking for custom code for their website. 
+              They had previously used a search box provided by a library database company that had allowed 
+              users to search either the library catalog or the library’s research databases. When their contract 
+              with the company expired, the City’s IT department had copied code from another library’s website to 
+              use as a replacement, which was functional but too small and not eye-catching. Library users were 
+              having trouble finding it on their page and ended up searching the City’s website instead of the 
+              library catalog.</p> 
+              <figure>
+                <img src="../assets/original-search-box.png" alt="Tulare Public Library home page with old search box">
+              </figure>
+              <p>The library wanted something that looked similar to the old search box from the 
+              library database company. I elicited their requirements for the project and they also provided me with a 
+              design comp.</p>
+              <figure>
+                <img src="../assets/design.png" alt="Search box design comp">
+              </figure>
+              <p>
+                I began the project by examining the code on their page. My first challenge on this project was deciding 
+                how best to structure the deliverables. The existing code had the search box displaying through an iframe. 
+                I assumed this was merely a relic from when they hosted the library database company’s search box and I 
+                decided to eliminate the iframe to house the search box directly on the page. Library staff informed me that 
+                the City’s department was not very comfortable reading or writing code, so I planned to deliver instructions 
+                on how to edit the code on their page to eliminate the iframe and give them code they could copy and paste in 
+                and along with the accompanying CSS file. I wrote the HTML, JavaScript, and CSS needed to create the search box
+                matching the design. When I initially delivered the code and the instruction documents, 
+                however, the IT department explained to library staff that the Content Management System (CMS) that they used 
+                required that they use an iframe to bring custom code onto their page. So I went back to restructure my code 
+                to deliver it in a separate HTML file along with new instructions for how to edit the HTML file to add the 
+                correct file path for the accompanying CSS file. I also provided instructions for editing the code for the 
+                iframe to be the right size to fit the search box and also how to edit the file path to the location where 
+                the HTML file was saved. 
+              </p>
+              <a href="installation-instructions.pdf" target="_blank">Download Instructions</a>
+              <p>The City’s IT department was able to successfully install the search box in May 2021. I followed up with 
+                library staff who let let me know that they were happy with the end result and the search box met all of 
+                their specifications.
+              </p>
+              <figure>
+                <a href="https://www.tulare.ca.gov/government/departments/community-services/tulare-public-library" target="_blank">
+                  <img src="../assets/new-search-box-large.png" alt="Tulare Public Library website with new search box"></a>
+              </figure>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  <footer id="contact-case-study">
+    <div class="content-wrapper">
+      <h4>Contact Me</h4>
+      <div class="footer-content">
+        <div class="hire">
+          <h5>Hire me</h5>
+          <a href="mailto:hello@jstickle.com"><p>hello [@] jstickle.com</p></a>
+          <a href="services/index.html"><p>Read more about my services here.</p></a>
+        </div>
+        <div class="social">
+          <h5>Follow me</h5>
+          <div class="social-icons">
+            <p><a href="https://twitter.com/JeannineStickle" target="_blank"> <i class="fab fa-twitter"></i></a></p>
+            <p><a href="https://github.com/jstickle-codes" target="_blank"><i class="fab fa-github"></i></a></p>
+            <p><a href="https://www.linkedin.com/in/jeannine-stickle" target="_blank"> <i class="fab fa-linkedin"></i></a></p>
+          </div>
+        </div>
+      </div>
+      <h6>Copyright 2020 | Jeannine Stickle</h6>
+    </div>
+  </footer>
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

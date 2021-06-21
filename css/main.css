@@ -220,23 +220,23 @@ nav ul li a {
   border: 5px solid #ffffff;
 }
 
-#about .about-content, #services .services-content {
+#about .about-content, #services .services-content, #case-study .case-study-content {
   text-align: center;
   margin-bottom: 100px;
 }
 
-#about h5 {
+#about h5, #case-study h5 {
   font-size: 1.7em;
   line-height: 1.5;
 }
 
-#about p {
+#about p, #case-study p {
   font-size: 1.5em;
 }
 
 /***** PORTFOLIO *****/
 
-#portfolio figure img {
+#portfolio figure img, #case-study figure img {
   border: 2px solid #b7b7b7;
 }
 
@@ -495,6 +495,19 @@ footer .footer-content {
 .education-1 {
   margin-bottom: 25px;
 }
+
+/****** CASE STUDY PAGE ******/
+
+#case-study figure img {
+  max-width: 50%;
+}
+
+#case-study a {
+  color: #ff654a;
+  font-size: 2em;
+  text-decoration: none;
+}  
+
 
 
 /* ==========================================================================
